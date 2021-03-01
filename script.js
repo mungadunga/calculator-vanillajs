@@ -67,4 +67,7 @@ document.querySelector(`.backspace`).addEventListener("click", e => {
    refresh(result);
 });
 
-document.querySelector(`.percent`).addEventListener("click", e => refresh(result /= 100));
+document.querySelector(`.percent`).addEventListener("click", e => {
+   result = String(result /= 100);
+   refresh(result);
+});
